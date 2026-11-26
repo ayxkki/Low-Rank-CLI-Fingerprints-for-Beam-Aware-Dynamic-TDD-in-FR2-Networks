@@ -1,0 +1,131 @@
+{
+ "common": {
+  "base_overrides": {
+   "s3_alt": 1,
+   "s3_dl_uncapped": true,
+   "s3_w_dl": 1.0
+  },
+  "seed_mapping": {
+   "network_and_channel_seed": "1000 + 97*s",
+   "traffic_seed": "5000 + 97*s"
+  },
+  "tuning_seeds": "0-9",
+  "held_out_seeds": "10-29",
+  "warmup_epochs": 40,
+  "epoch_s": 0.05,
+  "percentile_population": "all scheduled UL (DL) slot groups of all seven cells during the run (warm-up included), per seed, then averaged over seeds",
+  "per_ue_metrics": "after warm-up; ue_thU_p5 = 5th percentile over the 56 UEs of per-UE UL throughput; ue_share = served UL groups / groups as best-SNR candidate"
+ },
+ "Table5_main": {
+  "load_mbps": 420,
+  "epochs": 1000,
+  "seeds": "10-29",
+  "schemes": [
+   "Static TDD",
+   "Reactive DTDD + AI-BM",
+   "Reactive DTDD + Hier-BM",
+   "Reactive DTDD + Blacklist + AI-BM",
+   "Reactive DTDD + Blacklist (0 dB) + AI-BM",
+   "Reactive DTDD + CLI-aware sched. + AI-BM",
+   "JBD (Hier-BM)",
+   "JBD (proposed)",
+   "JBD (genie beams)"
+  ],
+  "file": "results/holdout.json"
+ },
+ "Table6_literature": {
+  "load_mbps": 420,
+  "epochs": 1000,
+  "seeds": "10-29",
+  "configurations": {
+   "ABSF_r0.25_t-5": {
+    "scheme": "Reactive DTDD + AI-BM",
+    "absf_ratio": 0.25,
+    "absf_thr_db": -5.0
+   },
+   "CANCEL-10/-20/-30": {
+    "scheme": "Reactive DTDD + AI-BM",
+    "cancel_res_db": [
+     -10,
+     -20,
+     -30
+    ]
+   },
+   "JBD+CANCEL-20": {
+    "scheme": "JBD (proposed)",
+    "cancel_res_db": -20
+   }
+  },
+  "file": "results/lit.json (+ shared rows from results/holdout.json)"
+ },
+ "Table1_Table4_offline": {
+  "file": "results/offline_fingerprint.json",
+  "realizations": "0-9",
+  "network_seed": "1000 + r",
+  "estimator_seed": "77 + r",
+  "measurements_per_site_pair": 256,
+  "estimators": {
+   "spec_struct": "structured design, specular dictionary",
+   "spec_random": "random design, specular dictionary",
+   "prop_struct": "structured design, proposed (5)",
+   "prop_random": "random design, proposed (5)"
+  }
+ },
+ "Fig4a_budget": {
+  "file": "results/fingerprint_budget.json"
+ },
+ "Fig4b_and_SecVIID_mismatch": {
+  "load_mbps": 420,
+  "epochs": 400,
+  "seeds": "10-29",
+  "estimated_fingerprint": {
+   "fp_mode": "est",
+   "fp_meas": 256,
+   "fp_robust": true,
+   "fp_online": true
+  },
+  "worlds": "config/worlds.json (ideal, realistic, dense_m15, harsh, realistic_coh)",
+  "retuning": {
+   "seeds": "0-9",
+   "blacklisting_thresholds_db": [
+    -5,
+    0,
+    5,
+    10
+   ],
+   "w_dl_harsh": [
+    0.5,
+    1.0,
+    2.0
+   ],
+   "criterion": "highest mean 5th-percentile UL SINR among settings stable in >= 90% of runs",
+   "selected": {
+    "realistic": 5,
+    "dense_m15": 5,
+    "harsh": 10,
+    "realistic_coh": 5,
+    "w_dl_harsh": 0.5
+   },
+   "file": "results/tune.json"
+  },
+  "files": [
+   "results/mismatch_sys.json",
+   "results/worlds.json"
+  ]
+ },
+ "Table2_convergence": {
+  "file": "results/convergence.json"
+ },
+ "Fig8_SecVIIH_capacity": {
+  "seeds": "10-19",
+  "nominal_loads_mbps": "470-540, step 10",
+  "duration_s": 75,
+  "codebooks": [
+   32,
+   64
+  ],
+  "stable_capacity": "largest nominal load up to which every run is stable; unstable at the lowest load -> lowest load - 10",
+  "test": "Wilcoxon signed-rank, two-sided, paired by seed",
+  "file": "results/capacity.json"
+ }
+}

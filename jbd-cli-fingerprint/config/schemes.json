@@ -1,0 +1,170 @@
+{
+ "Static TDD": {
+  "name": "Static TDD",
+  "duplex": "static",
+  "beam": "exhaustive",
+  "cli_sched": false,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "Reactive DTDD": {
+  "name": "Reactive DTDD",
+  "duplex": "reactive",
+  "beam": "exhaustive",
+  "cli_sched": false,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "Reactive DTDD + AI-BM": {
+  "name": "Reactive DTDD + AI-BM",
+  "duplex": "reactive",
+  "beam": "ai",
+  "cli_sched": false,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "Forecast DTDD + AI-BM": {
+  "name": "Forecast DTDD + AI-BM",
+  "duplex": "forecast",
+  "beam": "ai",
+  "cli_sched": false,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "JBD w/o CLI-aware sched.": {
+  "name": "JBD w/o CLI-aware sched.",
+  "duplex": "jbd",
+  "beam": "ai",
+  "cli_sched": false,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "JBD (exhaustive BM)": {
+  "name": "JBD (exhaustive BM)",
+  "duplex": "jbd",
+  "beam": "exhaustive",
+  "cli_sched": true,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "JBD (proposed)": {
+  "name": "JBD (proposed)",
+  "duplex": "jbd",
+  "beam": "ai",
+  "cli_sched": true,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "Reactive DTDD + Hier-BM": {
+  "name": "Reactive DTDD + Hier-BM",
+  "duplex": "reactive",
+  "beam": "hier",
+  "cli_sched": false,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "Reactive DTDD + Local-BM": {
+  "name": "Reactive DTDD + Local-BM",
+  "duplex": "reactive",
+  "beam": "local",
+  "cli_sched": false,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "Common DTDD + AI-BM": {
+  "name": "Common DTDD + AI-BM",
+  "duplex": "common",
+  "beam": "ai",
+  "cli_sched": false,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "Cluster DTDD + AI-BM": {
+  "name": "Cluster DTDD + AI-BM",
+  "duplex": "cluster",
+  "beam": "ai",
+  "cli_sched": false,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "Reactive DTDD + Blacklist + AI-BM": {
+  "name": "Reactive DTDD + Blacklist + AI-BM",
+  "duplex": "reactive",
+  "beam": "ai",
+  "cli_sched": false,
+  "blacklist": true,
+  "bl_thr": null
+ },
+ "Reactive DTDD + CLI-aware sched. + AI-BM": {
+  "name": "Reactive DTDD + CLI-aware sched. + AI-BM",
+  "duplex": "reactive",
+  "beam": "ai",
+  "cli_sched": true,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "Reactive DTDD + Blacklist + Hier-BM": {
+  "name": "Reactive DTDD + Blacklist + Hier-BM",
+  "duplex": "reactive",
+  "beam": "hier",
+  "cli_sched": false,
+  "blacklist": true,
+  "bl_thr": null
+ },
+ "Reactive DTDD + Blacklist (0 dB) + AI-BM": {
+  "name": "Reactive DTDD + Blacklist (0 dB) + AI-BM",
+  "duplex": "reactive",
+  "beam": "ai",
+  "cli_sched": false,
+  "blacklist": true,
+  "bl_thr": 0.0
+ },
+ "JBD (Hier-BM)": {
+  "name": "JBD (Hier-BM)",
+  "duplex": "jbd",
+  "beam": "hier",
+  "cli_sched": true,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "JBD (Local-BM)": {
+  "name": "JBD (Local-BM)",
+  "duplex": "jbd",
+  "beam": "local",
+  "cli_sched": true,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "JBD (AI-BM, uncertainty probing)": {
+  "name": "JBD (AI-BM, uncertainty probing)",
+  "duplex": "jbd",
+  "beam": "ai_unc",
+  "cli_sched": true,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "JBD (AI-BM, CLI-aware probing)": {
+  "name": "JBD (AI-BM, CLI-aware probing)",
+  "duplex": "jbd",
+  "beam": "ai_voi",
+  "cli_sched": true,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "JBD (genie beams)": {
+  "name": "JBD (genie beams)",
+  "duplex": "jbd",
+  "beam": "genie",
+  "cli_sched": true,
+  "blacklist": false,
+  "bl_thr": null
+ },
+ "JBD (optimal duplex)": {
+  "name": "JBD (optimal duplex)",
+  "duplex": "jbd_opt",
+  "beam": "ai",
+  "cli_sched": true,
+  "blacklist": false,
+  "bl_thr": null
+ }
+}

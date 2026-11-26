@@ -1,0 +1,81 @@
+{
+ "ideal": {},
+ "diff_as2": {
+  "gg_diff_n": 20,
+  "gg_diff_as_deg": 2.0
+ },
+ "diff_as5": {
+  "gg_diff_n": 20,
+  "gg_diff_as_deg": 5.0
+ },
+ "diff_as10": {
+  "gg_diff_n": 20,
+  "gg_diff_as_deg": 10.0
+ },
+ "dense_m20": {
+  "gg_dense_n": 50,
+  "gg_dense_db": -20.0
+ },
+ "dense_m15": {
+  "gg_dense_n": 50,
+  "gg_dense_db": -15.0
+ },
+ "dense_m10": {
+  "gg_dense_n": 50,
+  "gg_dense_db": -10.0
+ },
+ "hw_p5_a05": {
+  "hw_phase_deg": 5.0,
+  "hw_amp_db": 0.5
+ },
+ "hw_p10_a1": {
+  "hw_phase_deg": 10.0,
+  "hw_amp_db": 1.0
+ },
+ "hw_p20_a2": {
+  "hw_phase_deg": 20.0,
+  "hw_amp_db": 2.0
+ },
+ "grid_2": {
+  "fp_grid_deg": 2.0
+ },
+ "realistic": {
+  "gg_diff_n": 20,
+  "gg_diff_as_deg": 5.0,
+  "gg_dense_n": 50,
+  "gg_dense_db": -15.0,
+  "hw_phase_deg": 10.0,
+  "hw_amp_db": 1.0
+ },
+ "harsh": {
+  "gg_diff_n": 20,
+  "gg_diff_as_deg": 10.0,
+  "gg_dense_n": 50,
+  "gg_dense_db": -10.0,
+  "hw_phase_deg": 20.0,
+  "hw_amp_db": 2.0
+ },
+ "diff_as5_coh": {
+  "gg_diff_n": 20,
+  "gg_diff_as_deg": 5.0,
+  "gg_coherent": true
+ },
+ "realistic_coh": {
+  "gg_diff_n": 20,
+  "gg_diff_as_deg": 5.0,
+  "gg_dense_n": 50,
+  "gg_dense_db": -15.0,
+  "hw_phase_deg": 10.0,
+  "hw_amp_db": 1.0,
+  "gg_coherent": true
+ },
+ "harsh_coh": {
+  "gg_diff_n": 20,
+  "gg_diff_as_deg": 10.0,
+  "gg_dense_n": 50,
+  "gg_dense_db": -10.0,
+  "hw_phase_deg": 20.0,
+  "hw_amp_db": 2.0,
+  "gg_coherent": true
+ }
+}
