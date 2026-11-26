@@ -5,8 +5,8 @@ Configuration, seeds and per-run results for
 S. H. Kim and J.-M. Chung, "Low-Rank CLI Fingerprints for Beam-Aware Dynamic TDD in FR2 Networks:
 Joint Beam-Duplex Control and Loss-Guarded O-RAN Automation," submitted to IEEE Access.
 
-The simulator is not included here. It is available from the corresponding author on request
-(jmc@yonsei.ac.kr).
+The simulator is not included here. It is available upon author request
+(Sung Hyun Kim, leothecat@yonsei.ac.kr).
 
 ## Layout
 
